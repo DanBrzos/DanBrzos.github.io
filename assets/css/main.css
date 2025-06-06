@@ -2195,7 +2195,7 @@ input, select, textarea {
 
 		#header .inner {
 			position: relative;
-			z-index: 1;
+			z-index: 2;
 			margin: 0;
 			display: inline-block;
 			vertical-align: middle;
@@ -2268,7 +2268,7 @@ input, select, textarea {
 			filter: blur(8px);
 			opacity: 1;
 			transition: opacity 2s ease-in-out;
-			z-index: 0;
+			z-index: 1;
 		}
 
 	body.homepage.is-preload #header:after {
