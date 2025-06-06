@@ -2266,13 +2266,13 @@ input, select, textarea {
 			background-size: cover;
 			background-position: center;
 			filter: blur(8px);
-			opacity: 1; /* Start fully visible (blurred) */
+			opacity: 0; /* Start fully visible (blurred) */
 			transition: opacity 2s ease-in-out;
 			z-index: 1;
 		}
 
 		body.homepage.is-preload #header:after {
-			opacity: 0; /* Start hidden on preload */
+			opacity: 1; /* Start hidden on preload */
 		}
 
 
