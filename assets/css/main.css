@@ -2181,7 +2181,7 @@ input, select, textarea {
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
-	color: #fff;
+	color: #CC5500;
 	text-align: center;
 	padding: 5em 0 2em 0; /* was 7.5em — reduced to move text up */
 	cursor: default;
