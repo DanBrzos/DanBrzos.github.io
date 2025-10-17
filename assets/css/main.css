@@ -2200,7 +2200,7 @@ input, select, textarea {
 		margin: 0;
 		display: inline-block;
 		vertical-align: middle;
-		top: -30px; /* new: moves text upward */
+		top: -100px; /* new: moves text upward */
 	}
 
 	#header header {
