@@ -2183,7 +2183,7 @@ input, select, textarea {
 	background-attachment: fixed;
 	color: #CC5500;
 	text-align: center;
-	padding: 5em 0 2em 0; /* was 7.5em — reduced to move text up */
+	padding: 3em 0 2em 0; /* was 7.5em — reduced to move text up */
 	cursor: default;
 }
 
@@ -2200,7 +2200,7 @@ input, select, textarea {
 		margin: 0;
 		display: inline-block;
 		vertical-align: middle;
-		top: -60px; /* new: moves text upward */
+		top: -30px; /* new: moves text upward */
 	}
 
 	#header header {
