@@ -2173,107 +2173,110 @@ input, select, textarea {
 		}
 
 /* Header */
+/* Header */
 
-	#header {
+#header {
+	position: relative;
+	background-image: url("../../images/VerticalRocketBackground.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	color: #fff;
+	text-align: center;
+	padding: 5em 0 2em 0; /* was 7.5em — reduced to move text up */
+	cursor: default;
+}
+
+	#header:before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+	}
+
+	#header .inner {
 		position: relative;
+		z-index: 2;
+		margin: 0;
+		display: inline-block;
+		vertical-align: middle;
+		top: -60px; /* new: moves text upward */
+	}
+
+	#header header {
+		display: inline-block;
+	}
+
+		#header header > p {
+			font-size: 1.25em;
+			margin: 0;
+		}
+
+	#header h1 {
+		color: #fff;
+		font-size: 3em;
+		line-height: 1em;
+	}
+
+		#header h1 a {
+			color: inherit;
+		}
+
+	#header .button {
+		display: inline-block;
+		border-radius: 100%;
+		width: 4.5em;
+		height: 4.5em;
+		line-height: 4.5em;
+		text-align: center;
+		font-size: 1.25em;
+		padding: 0;
+	}
+
+	#header hr {
+		top: 1.5em;
+		margin-bottom: 3em;
+		border-bottom-color: rgba(192, 192, 192, 0.35);
+		box-shadow: inset 0 1px 0 0 rgba(192, 192, 192, 0.35);
+	}
+
+		#header hr:before, #header hr:after {
+			background: rgba(192, 192, 192, 0.35);
+		}
+
+	#header footer {
+		margin: 1em 0 0 0;
+	}
+
+body.homepage #header {
+	height: 100vh;
+	min-height: 40em;
+}
+
+	body.homepage #header h1 {
+		font-size: 4em;
+	}
+
+	body.homepage #header:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 		background-image: url("../../images/VerticalRocketBackground.jpg");
 		background-size: cover;
-		background-position: center center;
-		background-attachment: fixed;
-		color: #fff;
-		text-align: center;
-		padding: 7.5em 0 2em 0;
-		cursor: default;
+		background-position: center;
+		filter: blur(8px);
+		opacity: 0; /* Start fully visible (blurred) */
+		transition: opacity 2s ease-in-out;
+		z-index: 1;
 	}
 
-		#header:before {
-			content: '';
-			display: inline-block;
-			vertical-align: middle;
-			height: 100%;
-		}
-
-		#header .inner {
-			position: relative;
-			z-index: 2;
-			margin: 0;
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		#header header {
-			display: inline-block;
-		}
-
-			#header header > p {
-				font-size: 1.25em;
-				margin: 0;
-			}
-
-		#header h1 {
-			color: #fff;
-			font-size: 3em;
-			line-height: 1em;
-		}
-
-			#header h1 a {
-				color: inherit;
-			}
-
-		#header .button {
-			display: inline-block;
-			border-radius: 100%;
-			width: 4.5em;
-			height: 4.5em;
-			line-height: 4.5em;
-			text-align: center;
-			font-size: 1.25em;
-			padding: 0;
-		}
-
-		#header hr {
-			top: 1.5em;
-			margin-bottom: 3em;
-			border-bottom-color: rgba(192, 192, 192, 0.35);
-			box-shadow: inset 0 1px 0 0 rgba(192, 192, 192, 0.35);
-		}
-
-			#header hr:before, #header hr:after {
-				background: rgba(192, 192, 192, 0.35);
-			}
-
-		#header footer {
-			margin: 1em 0 0 0;
-		}
-
-	body.homepage #header {
-		height: 100vh;
-		min-height: 40em;
+	body.homepage.is-preload #header:after {
+		opacity: 1; /* Start hidden on preload */
 	}
 
-		body.homepage #header h1 {
-			font-size: 4em;
-		}
-
-		body.homepage #header:after {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-image: url("../../images/VerticalRocketBackground.jpg");
-			background-size: cover;
-			background-position: center;
-			filter: blur(8px);
-			opacity: 0; /* Start fully visible (blurred) */
-			transition: opacity 2s ease-in-out;
-			z-index: 1;
-		}
-
-		body.homepage.is-preload #header:after {
-			opacity: 1; /* Start hidden on preload */
-		}
 
 
 /* Nav */
