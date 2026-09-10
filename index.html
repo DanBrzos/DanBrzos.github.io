@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Daniel Brzostowski — Mechanical Engineer</title>
+<meta name="description" content="Daniel Brzostowski is a mechanical engineering student at UT Austin working on aerospace structures, rocket propulsion, and hardware design." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__mark"><span class="dot"></span>D. BRZOSTOWSKI</a>
+  <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="border-top:none;">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__copy">
+      <span class="hero__eyebrow">Mechanical Engineering — The University of Texas at Austin</span>
+      <h1>Building the hardware<br>that leaves <em>the ground.</em></h1>
+      <p class="hero__lede">I design, test, and fabricate structures for orbital and hybrid rockets — from carbon-fiber pressure vessels to the test stands that qualify them.</p>
+      <div class="hero__meta">
+        <span>Austin, TX</span>
+        <span>Texas Rocket Engineering Lab</span>
+        <span>Longhorn Rocketry Association</span>
+      </div>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">See my projects</a>
+        <a href="https://danbrzos.weebly.com/uploads/1/5/0/8/150819812/danielbrzostowskifinalizedresume.pdf" class="btn" target="_blank" rel="noopener">Download résumé</a>
+      </div>
+    </div>
+    <div class="hero__art" aria-hidden="true">
+      <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+        <line class="ascent-trail" x1="180" y1="332" x2="180" y2="46" />
+        <g class="rocket">
+          <path class="rocket-fin" d="M -12 8 L -34 34 L -18 34 L -12 26 Z" />
+          <path class="rocket-fin" d="M 12 8 L 34 34 L 18 34 L 12 26 Z" />
+          <path class="rocket-fin-highlight" d="M -12 8 L -22 30" />
+          <path class="rocket-fin-highlight" d="M 12 8 L 22 30" />
+          <path class="rocket-body" d="M -12 34 L -12 -6 C -12 -30 -6 -48 0 -58 C 6 -48 12 -30 12 -6 L 12 34 L 9 40 L -9 40 Z" />
+          <path class="rocket-seam" d="M -12 -6 L 12 -6" />
+          <path class="rocket-stripe" d="M -12 18 L 12 18 L 12 24 L -12 24 Z" />
+          <circle class="rocket-window" cx="0" cy="8" r="6" />
+          <circle class="rocket-window-highlight" cx="-2" cy="6" r="2" />
+          <path class="rocket-nozzle" d="M -9 40 L -6 46 L 6 46 L 9 40 Z" />
+          <path class="rocket-flame-outer" d="M -6 46 Q 0 72 6 46 Q 3 58 0 46 Q -3 58 -6 46 Z" />
+          <path class="rocket-flame-inner" d="M -3 46 Q 0 62 3 46 Q 1.5 54 0 46 Q -1.5 54 -3 46 Z" />
+        </g>
+        <text class="hud-label" x="206" y="60">ALT</text>
+        <text class="hud-value" id="hudAlt" x="206" y="76">0 M</text>
+        <text class="hud-label" x="206" y="100">VEL</text>
+        <text class="hud-value" id="hudVel" x="206" y="116">0 M/S</text>
+      </svg>
+      <div class="headshot" id="headshot">
+        <img src="images/headshot.jpg" alt="Daniel Brzostowski" onerror="this.closest('.headshot').classList.add('is-empty')">
+        <div class="headshot-placeholder">DB</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <span class="section__num">01</span>
+          <h2>About</h2>
+        </div>
+        <p class="section__intro">Certificate in Computational Science &amp; Engineering, on top of a mechanical engineering degree.</p>
+      </div>
+      <div class="about">
+        <div class="about__text measure">
+          <p>I'm a mechanical engineering student who spends most of my time either underneath a rocket test stand or inside a CAD model. Through Texas Rocket Engineering Lab and the Longhorn Rocketry Association, I've worked across the full lifecycle of flight hardware — structural design, simulation, manufacturing, and the test campaigns that prove it all actually holds.</p>
+          <p>Outside of rockets, I like taking things apart to understand them: a twenty-year-old motorcycle, a 3D printer, a combat robot built to survive being hit. My certificate in Computational Science and Engineering rounds that out with a comfort in Python and MATLAB that I put to work on data from tank ruptures, sensor logs, and simulations.</p>
+        </div>
+        <dl class="spec">
+          <div class="spec__title"><span>DATASHEET</span><span>REV. 2026</span></div>
+          <div class="spec__row"><dt>Institution</dt><dd>UT Austin</dd></div>
+          <div class="spec__row"><dt>Degree</dt><dd>B.S. Mechanical Eng.</dd></div>
+          <div class="spec__row"><dt>Certificate</dt><dd>Comp. Science &amp; Eng.</dd></div>
+          <div class="spec__row"><dt>Graduation</dt><dd>December 2026</dd></div>
+          <div class="spec__row"><dt>GPA</dt><dd>3.40</dd></div>
+          <div class="spec__row"><dt>Coursework</dt><dd>Thermo, Solids, Fluids, Dynamics, Comp. Methods</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <span class="section__num">02</span>
+          <h2>Experience</h2>
+        </div>
+        <p class="section__intro">Two years across structures, propulsion, and outreach.</p>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline__item is-current">
+          <span class="timeline__date">Jan 2025 — Current</span>
+          <div class="timeline__role">Orbital Test Stand Structures Lead</div>
+          <div class="timeline__org">Texas Rocket Engineering Lab · Spaceport America</div>
+          <p class="timeline__desc">Leading a team of 10 to design and fabricate an underground engine stand for testing orbital rockets.</p>
+        </div>
+
+        <div class="timeline__item is-current">
+          <span class="timeline__date">Sep 2023 — Current</span>
+          <div class="timeline__role">Propulsion Hardware Engineer</div>
+          <div class="timeline__org">Longhorn Rocketry Association · Spaceport America</div>
+          <p class="timeline__desc">Developing and manufacturing components of a hybrid rocket engine, including fabricating fuel grains in HDPE and ABS for upcoming hotfire tests.</p>
+        </div>
+
+        <div class="timeline__item">
+          <span class="timeline__date">Jul 2024 — Jan 2025</span>
+          <div class="timeline__role">Structures Reliable Engineer</div>
+          <div class="timeline__org">Texas Rocket Engineering Lab</div>
+          <p class="timeline__desc">Directed test campaigns and oversaw decisions on pressure vessels and airframe. Compiled and analyzed sensor data to determine the cause of tank ruptures and airframe cracks, and overhauled documentation to improve knowledge transfer.</p>
+        </div>
+
+        <div class="timeline__item">
+          <span class="timeline__date">May 2024 — Aug 2024</span>
+          <div class="timeline__role">Instructor</div>
+          <div class="timeline__org">iCode</div>
+          <p class="timeline__desc">Taught engineering and programming concepts to students with no technical background, and served as an advocate for STEM.</p>
+        </div>
+
+        <div class="timeline__item">
+          <span class="timeline__date">Sep 2023 — Jul 2024</span>
+          <div class="timeline__role">Carbon Overwrapped Pressure Vessel Team Member</div>
+          <div class="timeline__org">Texas Rocket Engineering Lab</div>
+          <p class="timeline__desc">Wrote technical procedures to validate flight tanks, designed test hardware in SolidWorks, installed sensors on vessels under cryogenic conditions, and ran structural simulations in ANSYS.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <span class="section__num">03</span>
+          <h2>Projects</h2>
+        </div>
+        <p class="section__intro">Rockets, robots, and a few things built for the fun of it.</p>
+      </div>
+      <div class="projects">
+
+        <article class="card card--lg" data-project="orbital-stand" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="card__media">
+            <img src="images/project-orbital-stand.jpg" alt="Orbital engine test stand" onerror="this.closest('.card__media').classList.add('is-empty')">
+            <div class="card__media-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              <span>images/project-orbital-stand.jpg</span>
+            </div>
+          </div>
+          <span class="card__tag">TREL</span>
+          <h3>Orbital Engine Test Stand</h3>
+          <p>Leading a 10-person team designing and fabricating an underground test stand built to qualify orbital rocket engines at Spaceport America.</p>
+          <div class="card__chips">
+            <span class="chip">SolidWorks</span>
+            <span class="chip">Team leadership</span>
+            <span class="chip">Structural design</span>
+          </div>
+          <div class="card__expand" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H3v6M15 21h6v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </article>
+
+        <article class="card card--sm" data-project="copv" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="card__media">
+            <img src="images/project-copv.jpg" alt="Carbon overwrapped pressure vessel" onerror="this.closest('.card__media').classList.add('is-empty')">
+            <div class="card__media-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              <span>images/project-copv.jpg</span>
+            </div>
+          </div>
+          <span class="card__tag">TREL</span>
+          <h3>Carbon Overwrapped Pressure Vessels</h3>
+          <p>Designed test hardware and validation procedures for flight tanks, and instrumented vessels through cryogenic testing.</p>
+          <div class="card__chips">
+            <span class="chip">ANSYS</span>
+            <span class="chip">Cryogenic testing</span>
+          </div>
+          <div class="card__expand" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H3v6M15 21h6v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </article>
+
+        <article class="card card--sm" data-project="hybrid-engine" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="card__media">
+            <img src="images/project-hybrid-engine.jpg" alt="Hybrid rocket engine hardware" onerror="this.closest('.card__media').classList.add('is-empty')">
+            <div class="card__media-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              <span>images/project-hybrid-engine.jpg</span>
+            </div>
+          </div>
+          <span class="card__tag">Longhorn Rocketry</span>
+          <h3>Hybrid Rocket Engine</h3>
+          <p>Manufacturing fuel grains and propulsion hardware for a hybrid engine ahead of hotfire testing at Spaceport America.</p>
+          <div class="card__chips">
+            <span class="chip">HDPE / ABS</span>
+            <span class="chip">Manufacturing</span>
+          </div>
+          <div class="card__expand" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H3v6M15 21h6v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </article>
+
+        <article class="card card--lg" data-project="battlebot" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="card__media">
+            <img src="images/project-battlebot.jpg" alt="Combat robot" onerror="this.closest('.card__media').classList.add('is-empty')">
+            <div class="card__media-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              <span>images/project-battlebot.jpg</span>
+            </div>
+          </div>
+          <span class="card__tag">UT Battle Bots</span>
+          <h3>Combat Robot — Design Lead</h3>
+          <p>Designed a combat robot in SolidWorks engineered to withstand repeated direct impacts in its most critical areas, then fabricated it using mills, 3D printers, and laser cutters.</p>
+          <div class="card__chips">
+            <span class="chip">SolidWorks</span>
+            <span class="chip">CNC milling</span>
+            <span class="chip">3D printing</span>
+          </div>
+          <div class="card__expand" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H3v6M15 21h6v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </article>
+
+        <article class="card card--sm" data-project="motorcycle" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="card__media">
+            <img src="images/project-motorcycle.jpg" alt="Honda Shadow motorcycle rebuild" onerror="this.closest('.card__media').classList.add('is-empty')">
+            <div class="card__media-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              <span>images/project-motorcycle.jpg</span>
+            </div>
+          </div>
+          <span class="card__tag">Personal</span>
+          <h3>Project Motorcycle</h3>
+          <p>Rebuilding a 2003 Honda Shadow A.C.E — reconstructing the body structure and upgrading the fuel and air systems for more performance.</p>
+          <div class="card__chips">
+            <span class="chip">Fabrication</span>
+          </div>
+          <div class="card__expand" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H3v6M15 21h6v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </article>
+
+        <article class="card card--sm" data-project="printer-3d" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="card__media">
+            <img src="images/project-3dprinter.jpg" alt="Rebuilt Ender 3 3D printer" onerror="this.closest('.card__media').classList.add('is-empty')">
+            <div class="card__media-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              <span>images/project-3dprinter.jpg</span>
+            </div>
+          </div>
+          <span class="card__tag">Personal</span>
+          <h3>3D Printer Rebuild</h3>
+          <p>Overhauled a stock Ender 3 with structural supports, self-leveling, better cooling, and wireless monitoring to improve speed and print quality.</p>
+          <div class="card__chips">
+            <span class="chip">Mechatronics</span>
+          </div>
+          <div class="card__expand" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H3v6M15 21h6v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <span class="section__num">04</span>
+          <h2>Skills</h2>
+        </div>
+        <p class="section__intro">Click a skill to jump to the project that used it.</p>
+      </div>
+      <div class="skills">
+        <div class="skillgroup">
+          <span class="skillgroup__label">SOFTWARE</span>
+          <div class="skillgroup__grid">
+            <button class="skill-tile" data-projects="copv,battlebot">
+              <span class="skill-name">SolidWorks</span>
+              <span class="skill-used">COPV, Battle Bots</span>
+            </button>
+            <button class="skill-tile" data-projects="copv">
+              <span class="skill-name">ANSYS</span>
+              <span class="skill-used">COPV</span>
+            </button>
+            <button class="skill-tile" disabled>
+              <span class="skill-name">Python</span>
+            </button>
+            <button class="skill-tile" disabled>
+              <span class="skill-name">MATLAB</span>
+            </button>
+            <button class="skill-tile" disabled>
+              <span class="skill-name">MS Office</span>
+            </button>
+          </div>
+        </div>
+        <div class="skillgroup">
+          <span class="skillgroup__label">MANUFACTURING</span>
+          <div class="skillgroup__grid">
+            <button class="skill-tile" data-projects="copv">
+              <span class="skill-name">Carbon fiber layup</span>
+              <span class="skill-used">COPV</span>
+            </button>
+            <button class="skill-tile" data-projects="battlebot">
+              <span class="skill-name">Milling</span>
+              <span class="skill-used">Battle Bots</span>
+            </button>
+            <button class="skill-tile" disabled>
+              <span class="skill-name">Soldering</span>
+            </button>
+            <button class="skill-tile" data-projects="battlebot,printer-3d">
+              <span class="skill-name">3D printing</span>
+              <span class="skill-used">Battle Bots, 3D Printer</span>
+            </button>
+            <button class="skill-tile" disabled>
+              <span class="skill-name">Drill press</span>
+            </button>
+            <button class="skill-tile" disabled>
+              <span class="skill-name">Lathe</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="skills__note">Trained in ITAR compliance · Eligible to work in the U.S. without restriction</p>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrap contact">
+      <div>
+        <h2>Let's talk hardware.</h2>
+        <p class="contact__lede">Open to internships and full-time roles in structures, propulsion, or mechanical design. Reach out, or take a look at the résumé for the full picture.</p>
+      </div>
+      <div class="contact__panel">
+        <div class="contact__row">
+          <span class="contact__label">EMAIL</span>
+          <a class="contact__value" href="mailto:danbrzos000@gmail.com">danbrzos000@gmail.com</a>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">LINKEDIN</span>
+          <a class="contact__value" href="https://www.linkedin.com/in/danielbrz/" target="_blank" rel="noopener">linkedin.com/in/danielbrz</a>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">RÉSUMÉ</span>
+          <a class="contact__value" href="https://danbrzos.weebly.com/uploads/1/5/0/8/150819812/danielbrzostowskifinalizedresume.pdf" target="_blank" rel="noopener">Download PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>© 2026 Daniel Brzostowski</span>
+  <span>Austin, Texas</span>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay" data-open="false">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" id="modalPanel">
+    <button class="modal__close" id="modalClose" aria-label="Close project details">&times;</button>
+    <div class="modal__gallery" id="modalGallery"></div>
+    <div class="modal__body">
+      <span class="modal__tag" id="modalTag"></span>
+      <h3 id="modalTitle"></h3>
+      <p class="modal__detail" id="modalDetail"></p>
+      <ul class="modal__highlights" id="modalHighlights"></ul>
+      <div class="modal__chips" id="modalChips"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
